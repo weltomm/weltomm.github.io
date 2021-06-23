@@ -1,0 +1,11 @@
+// @import './foundation/settings/settings';
+// @import './foundation/foundation.scss';
+// @import 'foundation-sites/scss/foundation';
+// @import "~foundation-sites/scss/foundation";
+@import "./foundation/foundation";
+@include foundation-everything;
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
