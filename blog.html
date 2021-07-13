@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Blog</title>
     <headscripts><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script></headscripts>
-<link href="main.9aa9c5df60fea603664b.css" rel="stylesheet"></head>
+<link href="main.67f05ebaeeb8b67bca22.css" rel="stylesheet"></head>
 <body>
     <navigation><nav role="navigation">
     <ul id="menuBar" class="menu align-middle grid-x">
@@ -21,8 +22,13 @@
         <li id="menuItem4" class="menu-item cell small-12 medium-auto hide-for-small-only" data-toggler=".hide-for-small-only"><a href="contact.html">Contact</a></li>
     </ul>
 </nav></navigation>
-    <section class="blog__posts" id="posts"></section>
-    <ul class="pagination" role="navigation" aria-label="Pagination">
+    <div class="blog__wrapper grid-x align-center" id="gridd">
+        <section class="blog__posts cell small-12 grid-x align-center" id="posts"></section>
+        <a href="#" class="button js-load-more cell small-4 medium-1"> Load More</a>
+        <div class="preloader hide"><div class="lds-ripple"><div></div><div></div></div></div>
+    </div>
+
+    <!-- <ul class="pagination for__blog" role="navigation" aria-label="Pagination">
         <li class="disabled">Previous <span class="show-for-sr">page</span></li>
         <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
         <li><a href="#0" aria-label="Page 2">2</a></li>
@@ -31,7 +37,7 @@
         <li class="ellipsis" aria-hidden="true"></li>
         <li><a href="#0" aria-label="Page 12">12</a></li>
         <li><a href="#0" aria-label="Page 13">13</a></li>
-        <li><a href="#0" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
-      </ul>
-<script defer src="index.9aa9c5df60fea603664b.js"></script></body>
+        <li><a href="#0" aria-label="Next page" class="pagi-next">Next <span class="show-for-sr">page</span></a></li>
+    </ul> -->
+<script defer src="index.67f05ebaeeb8b67bca22.js"></script></body>
 </html>
