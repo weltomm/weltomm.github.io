@@ -1,0 +1,259 @@
+[
+    {
+        "city": "Greenfield",
+        "id": "BUS-10",
+        "phone": "(555) 345-6789",
+        "address": "345 Garden Avenue",
+        "deals": [
+            "61b39734-b357-4c3f-9e31-aa9ff3fd0292",
+            "d12af44f-0ad6-43fb-861e-eb439596dc05"
+        ],
+        "logo": "https://placehold.co/400",
+        "email": "info@veggiedelight.com",
+        "website": "www.veggiedelight.com",
+        "type": [{ "id": "uLXt", "name": "Restaurant", "color": "yellow" }],
+        "name": "Veggie Delight"
+    },
+    {
+        "city": "Suburbia",
+        "id": "BUS-11",
+        "phone": "(555) 789-0123",
+        "address": "567 Homely Street",
+        "deals": [
+            "74171887-d421-474d-b90e-d2f57f4d5454",
+            "bb1b0cab-c62a-45be-8a1a-ba11889b1f7a"
+        ],
+        "logo": "https://placehold.co/400",
+        "email": "info@thecozycorner-cafe.com",
+        "website": "www.thecozycorner-cafe.com",
+        "type": [
+            { "id": "BW^W", "name": "Cafe", "color": "default" },
+            { "id": "x?cR", "name": "Bar", "color": "purple" }
+        ],
+        "name": "The Cozy Corner"
+    },
+    {
+        "city": "Krakow",
+        "id": "BUS-6",
+        "phone": "(555) 321-0987",
+        "address": "789 Shoreline Drive",
+        "deals": [
+            "6be2421a-71c1-42f4-b1b5-f40188a29ddc",
+            "711721e8-f439-4252-afda-5035236bcd89",
+            "8291784e-cb3a-4202-92f1-e157093c498c"
+        ],
+        "logo": "https://placehold.co/400",
+        "email": "info@sunsetbistro.com",
+        "website": "www.sunsetbistro.com",
+        "type": [{ "id": "uLXt", "name": "Restaurant", "color": "yellow" }],
+        "name": "Sunset Bistro"
+    },
+    {
+        "city": "London",
+        "id": "BUS-13",
+        "phone": "(555) 234-5678",
+        "address": "210 Chili Plaza",
+        "deals": [
+            "bbfe652c-c7b5-45ce-af29-77cd6828e101",
+            "d7fac2ff-6ca5-48dd-93f4-b2396614cf1e"
+        ],
+        "logo": "https://placehold.co/400",
+        "email": "info@mexicraze.com",
+        "website": "www.mexicraze.com",
+        "type": [
+            { "id": "uLXt", "name": "Restaurant", "color": "yellow" },
+            { "id": "BW^W", "name": "Cafe", "color": "default" }
+        ],
+        "name": "MexiCraze"
+    },
+    {
+        "city": "Krakow",
+        "id": "BUS-15",
+        "phone": "(555) 456-7890",
+        "address": "123 Bourbon Street",
+        "deals": [
+            "36d93260-eac1-4d40-a59b-596e13125cfe",
+            "6d6e4470-7ad8-4039-a338-94c067af8869"
+        ],
+        "logo": "https://placehold.co/400",
+        "email": "info@whiskeywhirlwind.com",
+        "website": "www.whiskeywhirlwind.com",
+        "type": [
+            { "id": "x?cR", "name": "Bar", "color": "purple" },
+            { "id": "BW^W", "name": "Cafe", "color": "default" }
+        ],
+        "name": "Whiskey Whirlwind"
+    },
+    {
+        "city": "Krakow",
+        "id": "BUS-16",
+        "phone": "(555) 789-0123",
+        "address": "456 Spaghetti Square",
+        "deals": [
+            "0ec813e4-1789-4c1d-adb1-a2d4cd76488a",
+            "0fee5cce-eb40-4f85-b9a2-93a3d2a1fa44"
+        ],
+        "logo": "https://placehold.co/400",
+        "email": "info@pastaperfection.com",
+        "website": "www.pastaperfection.com",
+        "type": [{ "id": "uLXt", "name": "Restaurant", "color": "yellow" }],
+        "name": "Pasta Perfection"
+    },
+    {
+        "city": "Krakow",
+        "id": "BUS-8",
+        "phone": "(555) 234-5678",
+        "address": "135 Sushi Street",
+        "deals": [],
+        "logo": "https://placehold.co/400",
+        "email": "info@sushisensation.com",
+        "website": "www.sushisensation.com",
+        "type": [
+            { "id": "uLXt", "name": "Restaurant", "color": "yellow" },
+            { "id": "BW^W", "name": "Cafe", "color": "default" }
+        ],
+        "name": "Sushi Sensation"
+    },
+    {
+        "city": "Krakow",
+        "id": "BUS-14",
+        "phone": "(555) 345-6789",
+        "address": "789 Breakfast Boulevard",
+        "deals": [],
+        "logo": "https://placehold.co/400",
+        "email": "info@morningmunchiescafe.com",
+        "website": "www.morningmunchiescafe.com",
+        "type": [{ "id": "BW^W", "name": "Cafe", "color": "default" }],
+        "name": "Morning Munchies Cafe"
+    },
+    {
+        "city": "Greenfield",
+        "id": "BUS-7",
+        "phone": "(555) 678-5432",
+        "address": "246 Java Lane",
+        "deals": [],
+        "logo": "https://placehold.co/400",
+        "email": "info@javajunction-cafe.com",
+        "website": "www.javajunction-cafe.com",
+        "type": [
+            { "id": "BW^W", "name": "Cafe", "color": "default" },
+            { "id": "x?cR", "name": "Bar", "color": "purple" }
+        ],
+        "name": "Java Junction"
+    },
+    {
+        "city": "Suburbia",
+        "id": "BUS-12",
+        "phone": "(555) 012-3456",
+        "address": "987 Palm Beach Road",
+        "deals": [
+            "0e431c8f-e015-443d-ab08-fe044ee87272",
+            "4e441694-7e81-4736-8464-08e1de166b7f"
+        ],
+        "logo": "https://placehold.co/400",
+        "email": "info@tikitikilounge.com",
+        "website": "www.tikitikilounge.com",
+        "type": [
+            { "id": "x?cR", "name": "Bar", "color": "purple" },
+            { "id": "BW^W", "name": "Cafe", "color": "default" }
+        ],
+        "name": "Tiki Tiki Lounge"
+    },
+    {
+        "city": "Cityville",
+        "id": "BUS-4",
+        "phone": "(555) 123-4567",
+        "address": "123 Main Street",
+        "deals": [
+            "46d3802b-afdd-439f-a27b-2ea14df4bd20",
+            "a32cdcf9-d474-4f55-9f8d-68db0dad47ec",
+            "a388cb55-4411-46cf-8a81-84d6321ed9b4"
+        ],
+        "logo": "https://placehold.co/400",
+        "email": "info@thebrewhaven.com",
+        "website": "www.thebrewhaven.com",
+        "type": [{ "id": "x?cR", "name": "Bar", "color": "purple" }],
+        "name": "The Brew Haven"
+    },
+    {
+        "city": "Krakow",
+        "id": "BUS-17",
+        "phone": "(555) 012-3456",
+        "address": "789 Tranquil Terrace",
+        "deals": [
+            "2b6dd03b-8d23-49db-ba64-8551160e43d8",
+            "e4af4d47-b478-44e1-a33a-a06ac7016da5"
+        ],
+        "logo": "https://placehold.co/400",
+        "email": "info@tealeafdelights-cafe.com",
+        "website": "www.tealeafdelights-cafe.com",
+        "type": [{ "id": "BW^W", "name": "Cafe", "color": "default" }],
+        "name": "Tea Leaf Delights"
+    },
+    {
+        "city": "Cityville",
+        "id": "BUS-18",
+        "phone": "(555) 234-5678",
+        "address": "210 Artistic Avenue",
+        "deals": [
+            "14ea435c-9b7e-4f25-a520-9158ba294ae7",
+            "da6b91d6-fc7b-47d4-9123-1eaab3d6c2ac"
+        ],
+        "logo": "https://placehold.co/400",
+        "email": "info@craftycocktails.com",
+        "website": "www.craftycocktails.com",
+        "type": [{ "id": "x?cR", "name": "Bar", "color": "purple" }],
+        "name": "Crafty Cocktails"
+    },
+    {
+        "city": "Cityville",
+        "id": "BUS-9",
+        "phone": "(555) 876-5432",
+        "address": "789 Saxophone Lane",
+        "deals": [],
+        "logo": "https://placehold.co/400",
+        "email": "info@thebluesbar.com",
+        "website": "www.thebluesbar.com",
+        "type": [
+            { "id": "x?cR", "name": "Bar", "color": "purple" },
+            { "id": "uLXt", "name": "Restaurant", "color": "yellow" }
+        ],
+        "name": "The Blues Bar"
+    },
+    {
+        "city": "Krakow",
+        "id": "BUS-5",
+        "phone": "(555) 987-6543",
+        "address": "456 Oak Avenue",
+        "deals": [
+            "17982220-663a-42c4-8866-4bdeabb1c0f8",
+            "7f0de101-7a5b-4975-b8bd-e418d0cd656e",
+            "f036dc21-8e95-425a-bc36-ead23e55310d"
+        ],
+        "logo": "https://placehold.co/400",
+        "email": "info@pizzaparadise.com",
+        "website": "www.pizzaparadise.com",
+        "type": [
+            { "id": "uLXt", "name": "Restaurant", "color": "yellow" },
+            { "id": "BW^W", "name": "Cafe", "color": "default" },
+            { "id": "x?cR", "name": "Bar", "color": "purple" }
+        ],
+        "name": "Pizza Paradise"
+    },
+    {
+        "city": "Krakow",
+        "id": "BUS-3",
+        "phone": "(555) 123-4567",
+        "address": "Plac Nowy, 7",
+        "deals": [],
+        "logo": "https://placehold.co/400",
+        "email": "info@thebrewhaven.com",
+        "website": "www.thebrewhaven.com",
+        "type": [
+            { "id": "x?cR", "name": "Bar", "color": "purple" },
+            { "id": "uLXt", "name": "Restaurant", "color": "yellow" },
+            { "id": "BW^W", "name": "Cafe", "color": "default" }
+        ],
+        "name": "Tajemniczy ogrod"
+    }
+]
