@@ -1,0 +1,16 @@
+<p>"10a-Production" - your reliable partner in creating incredible visual stories!
+ We are a professional company in the field of professional video content editing.
+ Our team of creative specialists combines experience, creativity and high-tech
+ approaches to create unique and exciting videos.<br />
+ Our goal is to capture your most important moments and turn them into unforgettable cinematic works of art.</p>
+
+<h3 class="my-10">Main areas of activity: (services)</h3>
+<ul class="mb-10">
+<li>Video editing: We provide a full range of editing services for wedding videos, short promotional videos, movies and documentaries;</li>
+<li>Digital post-production processing: Our team specializes in professional digital video processing: color correction, sound, visual effects and graphics;</li>
+<li>Animation and motion design: We create creative and memorable animations for corporate presentations, commercials and multimedia projects;</li>
+<li>We strive for the highest quality and individualized approach to each client to make their ideas visible and memorable.</li>
+</ul>
+Therefore, our main goal is to free videographers from the routine of video editing and turn this multi-hour process into a five-minute short brief, and we will do the rest ourselves
+
+"10a-Production" is not just a video editing firm, it is a creative space where every project is perceived as a unique opportunity to create a work of art.
