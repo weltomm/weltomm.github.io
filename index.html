@@ -14,9 +14,8 @@
     <body>
         <div id="app"></div>
         <script>
-            window.Telegram.WebApp.ready(function () {
-                if (!window.WebApp?.isExpanded) window.WebApp?.expand();
-            });
+            Telegram?.WebApp?.ready();
+            Telegram?.WebApp?.expand();
         </script>
     </body>
 </html>
