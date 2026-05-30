@@ -11,7 +11,6 @@ html,
 body {
   height: 100%;
   font-family: "Figtree", sans-serif;
-  font-size: 16px;
 }
 
 * {
@@ -25,19 +24,17 @@ body {
   flex-direction: column;
   padding: var(--padding);
   background: var(--yellow);
+  place-content: center;
   line-height: 1.5;
-
-  /* height: 100dvh; */
+  gap: var(--gap);
 
   main {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     place-items: center;
   }
 
   footer {
-    margin-top: auto;
     text-align: center;
   }
 }
@@ -83,10 +80,9 @@ body {
 
 .blog-card__link {
   text-decoration: none;
-  display: contents;
   color: var(--dgray);
 
-  &:hover {
+  &:is(:hover, :focus) {
     color: var(--yellow);
   }
 }
