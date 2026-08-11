@@ -18,7 +18,7 @@
 			- if not logged in: should display as text. By clicking should redirect to login/register form (probably better have a dedicated page for this flow?)
 			- if logged in: should display image (avatar) + name of the user and "open profile" text
 		- site menu (at the moment, to be decided if those will be anchor links to sections on the same page, or links to dedicated pages)
-			- **[Твій вплив](#твій+вплив)** aka "twoj wplyp"
+			- **[Твій вплив](#твій-вплив)** aka "twoj wplyp"
 			- **[How to buy](#how-to-buy)**: takes user to detailed step-by-step guide on how to buy a duckie (donate)
 			- **[About me](#about-me)**: info about Denys and "Tak Wiele za tak niewiele" project.
 			- **[aktualności](#aktualności-news)**: 
