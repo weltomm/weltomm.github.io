@@ -62,7 +62,7 @@ A blog-like page about recent activities where Denys can contribute. This page s
 Standard "frequently asked questions" section, presented as list of Q&A accordions. Preferrably also contributable by Denys
 #### Checkout
 > [!WARNING]
-> at the moment of brainstorming, client talked about having a preselected amount of pieces (5pcs) with availability to change amount (6, 7, and so on, up to 20). This may be not the best option as some people would be able to abuse such system. #suggestion: use predefined amounts and display them as small selectable cards of 5, 10, 15, 20 pieces. #negotiable  
+> at the moment of brainstorming, client talked about having a preselected amount of pieces (5pcs) with availability to change amount (6, 7, and so on, up to 20). This may be not the best option as some people would be able to abuse such system. #suggestion: use predefined amounts and display them as small selectable cards of 5, 10, 15, 20 pieces. [#]negotiable  
 
 > [!WARNING] 
 > at the moment of brainstorming, it is not yet obvious if this is going to be a one page checkout or multi page one. So, for now, each logical block will be referenced as "step"
