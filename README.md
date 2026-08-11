@@ -1,4 +1,5 @@
-> [!INFO] This page is created as a very first client's brainstorm. It may contain some grammar mistakes, which should be corrected (ex: not using proper Polish symbols due to using english keyboard layout while typing Polish words).
+> [!NOTE]
+> This page is created as a very first client's brainstorm. It may contain some grammar mistakes, which should be corrected (ex: not using proper Polish symbols due to using english keyboard layout while typing Polish words).
 ## General
 - Main colors should be black and white, with elements of orange (as default color of the duck). Maybe makes sense to apply 60/30/10 rule? 
 - login/register is under question, may be a good option in future.
@@ -29,7 +30,7 @@
 - mention of either copyright (if applicable) or author's name (my, as a developer who built and maintained this website)
 ### Pages
 #### Твій вплив
-> [!INFO]
+> [!NOTE]
 > mostly static content explaining to a visitor how he/she can help and influence. Showcasing foundations and ways the money is used.
 - photos + text slider taking being as a major part of the page
 	- should be a slider with a photo+text per view per case. arrow and dots controls should be available to manually switch slides while slider should also switch slides automatically
@@ -39,7 +40,7 @@
 > 
 
 #### How to buy
-> [!INFO]
+> [!NOTE]
 > page dedicated to inform visitors how they can "buy a duckie"(donate) step-by-step
 
 - some "hero" image 
@@ -60,16 +61,16 @@ A blog-like page about recent activities where Denys can contribute. This page s
 #### FAQ
 Standard "frequently asked questions" section, presented as list of Q&A accordions. Preferrably also contributable by Denys
 #### Checkout
-> [!attention]
+> [!WARNING]
 > at the moment of brainstorming, client talked about having a preselected amount of pieces (5pcs) with availability to change amount (6, 7, and so on, up to 20). This may be not the best option as some people would be able to abuse such system. #suggestion: use predefined amounts and display them as small selectable cards of 5, 10, 15, 20 pieces. #negotiable  
 
-> [!info] 
->at the moment of brainstorming, it is not yet obvious if this is going to be a one page checkout or multi page one. So, for now, each logical block will be referenced as "step"
+> [!WARNING] 
+> at the moment of brainstorming, it is not yet obvious if this is going to be a one page checkout or multi page one. So, for now, each logical block will be referenced as "step"
 
 
 ##### Step 1:
 - quantity (of duckies) selector
-> [!attention]
+> [!WARNING]
 > at the moment of brainstorming, client talked about having a preselected amount of pieces (5pcs) with availability to change amount (6, 7, and so on, up to 20). This may be not the best option as some people would be able to abuse such system. #suggestion: use predefined amounts and display them as small selectable cards of 5, 10, 15, 20 pieces. #negotiable  
 - "price picker": 30zl, 50zl, 100zl, custom 
 	- may be good idea to also display as small cards
