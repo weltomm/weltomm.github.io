@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quit Streak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700;900&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin>(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))n(s);new MutationObserver(s=>{for(const a of s)if(a.type==="childList")for(const c of a.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&n(c)}).observe(document,{childList:!0,subtree:!0});function r(s){const a={};return s.integrity&&(a.integrity=s.integrity),s.referrerPolicy&&(a.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?a.credentials="include":s.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function n(s){if(s.ep)return;s.ep=!0;const a=r(s);fetch(s.href,a)}})();const E=4.3,S="streak-config",m={habit:"smoke",quitAt:"2026-09-11T10:01:00.000Z",pricePerPack:29,packsPerDay:1.5};function L(){const e=localStorage.getItem(S);if(!e)return m;try{return JSON.parse(e)}catch{return m}}function A(e){localStorage.setItem(S,JSON.stringify(e))}function O(e,t,r){e.innerHTML=`
+    <form class="setup-form">
+      <h1>Set up your streak</h1>
+      <label>
+        What are you quitting?
+        <input name="habit" type="text" required />
+      </label>
+      <label>
+        Quit date &amp; time
+        <input name="quitAt" type="datetime-local" required />
+      </label>
+      <label>
+        Price per pack (RON)
+        <input name="pricePerPack" type="number" min="0" step="0.01" required />
+      </label>
+      <label>
+        Packs per day
+        <input name="packsPerDay" type="number" min="0" step="0.1" required />
+      </label>
+      <button type="submit">Save</button>
+    </form>
+  `,e.querySelector('input[name="habit"]').value=(t==null?void 0:t.habit)??"smoke",e.querySelector('input[name="quitAt"]').value=F(t==null?void 0:t.quitAt),e.querySelector('input[name="pricePerPack"]').value=String((t==null?void 0:t.pricePerPack)??29),e.querySelector('input[name="packsPerDay"]').value=String((t==null?void 0:t.packsPerDay)??1);const n=e.querySelector(".setup-form");n.addEventListener("submit",s=>{s.preventDefault();const a=new FormData(n),c={habit:String(a.get("habit")).trim(),quitAt:new Date(String(a.get("quitAt"))).toISOString(),pricePerPack:parseFloat(String(a.get("pricePerPack"))),packsPerDay:parseFloat(String(a.get("packsPerDay")))};r(c)})}function F(e){const t=e?new Date(e):new Date,r=n=>String(n).padStart(2,"0");return`${t.getFullYear()}-${r(t.getMonth()+1)}-${r(t.getDate())}T${r(t.getHours())}:${r(t.getMinutes())}`}function I(e,t=new Date){return t.getTime()-new Date(e).getTime()}function T(e){const t=e<0,r=Math.floor(Math.abs(e)/1e3),n=Math.floor(r/86400),s=Math.floor(r%86400/3600),a=Math.floor(r%3600/60),c=r%60;return{isFuture:t,days:n,hours:s,minutes:a,seconds:c}}function N(e,t){return e*t}function $(e,t,r){const n=N(e,t),s=Math.max(r,0)/864e5,a=n*s,c=a/E;return{ron:a,usd:c}}function y(e){return e.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2})}function H(e,t,r){e.innerHTML=`
+    <div class="main-view">
+      <div class="topbar">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span class="badge-text">Active</span>
+        </div>
+        <button class="edit-btn" type="button" aria-label="Edit">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20h9"></path>
+            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="content">
+        <div class="heading">
+          <p class="statement">I don't <em>${R(t.habit)}</em></p>
+          <p class="quit-date">since <span class="quit-date-value"></span></p>
+        </div>
+        <div class="days-block">
+          <div class="days">0</div>
+          <div class="days-label">Days Free</div>
+        </div>
+        <div class="clock">
+          <div class="clock-unit"><div class="value hours">0</div><div class="unit-label">Hrs</div></div>
+          <div class="clock-colon">:</div>
+          <div class="clock-unit"><div class="value minutes">0</div><div class="unit-label">Min</div></div>
+          <div class="clock-colon">:</div>
+          <div class="clock-unit"><div class="value seconds">0</div><div class="unit-label">Sec</div></div>
+        </div>
+        <div class="savings">
+          <div class="savings-label">Money Saved</div>
+          <div class="savings-row">
+            <div class="savings-col">
+              <div class="amount ron">0.00</div>
+              <div class="currency">RON</div>
+            </div>
+            <div class="savings-divider"></div>
+            <div class="savings-col">
+              <div class="amount usd">0.00</div>
+              <div class="currency">USD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `,e.querySelector(".quit-date-value").textContent=new Date(t.quitAt).toLocaleDateString();const n=e.querySelector(".badge"),s=e.querySelector(".badge-text"),a=e.querySelector(".days"),c=e.querySelector(".hours"),q=e.querySelector(".minutes"),k=e.querySelector(".seconds"),P=e.querySelector(".amount.ron"),D=e.querySelector(".amount.usd");function u(){const v=I(t.quitAt),{isFuture:o,days:i,hours:g,minutes:M,seconds:w}=T(v);a.textContent=o?"0":String(i),c.textContent=o?"0":String(i*24+g),q.textContent=o?"0":String(M),k.textContent=o?"0":String(w),n.classList.toggle("badge--future",o),s.textContent=o?`Starts in ${i}d`:"Active";const p=$(t.pricePerPack,t.packsPerDay,v);P.textContent=y(p.ron),D.textContent=y(p.usd)}u();const d=setInterval(u,1e3);return e.querySelector(".edit-btn").addEventListener("click",()=>{clearInterval(d),r()}),()=>clearInterval(d)}function R(e){const t=document.createElement("div");return t.textContent=e,t.innerHTML}const b=document.getElementById("app");let l=null;function h(e){l&&(l(),l=null),O(b,e,t=>{A(t),f(t)})}function f(e){l=H(b,e,()=>h(e))}function U(){const e=L();e?f(e):h(null)}U();</script>
+    <style rel="stylesheet" crossorigin>:root{color-scheme:dark;--bg: #090c11;--surface: #10151b;--ink: #eef3f7;--muted: #7b8593;--line: #262d35;--ember: #ff6b35;--ember-soft: #ffb199;--green: #6fe39a;--amber: #ffb35c}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,-apple-system,Segoe UI,sans-serif;padding:1.5rem}#app{width:100%;max-width:420px;animation:fade-in .4s ease-out}@keyframes fade-in{0%{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.setup-form{display:flex;flex-direction:column;gap:1rem}.setup-form h1{font-family:Unbounded,sans-serif;font-weight:500;font-size:1.3rem;margin:0 0 .5rem;color:var(--ink)}.setup-form label{display:flex;flex-direction:column;gap:.35rem;font-size:.9rem;color:var(--muted)}.setup-form input{font-size:1rem;padding:.6rem .7rem;background:var(--surface);border:1px solid var(--line);border-radius:8px;color:var(--ink)}.setup-form input:focus{outline:none;border-color:var(--ember)}.setup-form button{margin-top:.5rem;padding:.75rem 1rem;font-family:Unbounded,sans-serif;font-size:.95rem;font-weight:700;color:#1a0f08;background:linear-gradient(90deg,var(--ember),var(--ember-soft));border:none;border-radius:8px;cursor:pointer}.main-view{display:flex;flex-direction:column;text-align:center}.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}.content{display:flex;flex-direction:column;align-items:center;gap:2.25rem}.badge{display:inline-flex;align-items:center;gap:6px;padding:6px 12px 6px 10px;border-radius:999px;background:#6fe39a1a;border:1px solid rgba(111,227,154,.28)}.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 6px 1px #6fe39ab3;animation:badge-blink 2s ease-in-out infinite}.badge-text{font-family:Unbounded,sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green)}.badge--future{background:#ffb35c1a;border-color:#ffb35c4d}.badge--future .badge-dot{background:var(--amber);box-shadow:0 0 6px 1px #ffb35c99}.badge--future .badge-text{color:var(--amber)}@keyframes badge-blink{0%,to{opacity:1}50%{opacity:.45}}.edit-btn{flex-shrink:0;width:34px;height:34px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid var(--line);color:var(--muted);background:#ffffff05;cursor:pointer;padding:0}.edit-btn svg{width:15px;height:15px}.heading{margin:0 0 26px}.statement{font-family:Unbounded,sans-serif;font-weight:500;font-size:1.3rem;line-height:1.3;margin:0;color:var(--ink)}.statement em{font-style:normal;font-weight:700;background:linear-gradient(90deg,var(--ember),var(--ember-soft));-webkit-background-clip:text;background-clip:text;color:transparent}.quit-date{display:block;margin:8px 0 0;font-family:Unbounded,sans-serif;font-weight:700;font-size:1rem;letter-spacing:.02em;color:var(--ember-soft);font-variant-numeric:tabular-nums}.days-block{position:relative}.days-block:before{content:"";position:absolute;top:-60px;right:-100px;bottom:-60px;left:-100px;margin:auto;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,#ff6b3552,#ff6b3500 68%);filter:blur(2px);animation:pulse-breathe 2.2s ease-in-out infinite;z-index:-1}@keyframes pulse-breathe{0%,to{transform:scale(1);opacity:.7}50%{transform:scale(1.08);opacity:1}}.days{font-family:Unbounded,sans-serif;font-weight:900;font-size:5.2rem;line-height:.9;color:var(--ink);font-variant-numeric:tabular-nums}.days-label{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ember);font-weight:700;margin:6px 0 24px}.clock{display:flex;justify-content:center;align-items:flex-start;gap:6px}.clock-unit{display:flex;flex-direction:column;align-items:center;min-width:52px}.clock-unit .value{font-family:Unbounded,sans-serif;font-weight:700;font-size:1.7rem;color:#b7c0ca;font-variant-numeric:tabular-nums}.clock-unit .value.seconds{animation:tick-glow 1s steps(1) infinite}@keyframes tick-glow{0%,to{color:#b7c0ca}50%{color:var(--ember)}}.unit-label{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:#4d5661;margin-top:4px;font-weight:700}.clock-colon{font-family:Unbounded,sans-serif;font-weight:700;font-size:1.7rem;color:#313a44;align-self:flex-start}.savings{margin:30px auto 0;width:100%;max-width:270px;border:1px solid rgba(255,107,53,.3);border-radius:18px;background:#ff6b3512;padding:16px 8px 14px}.savings-label{text-align:center;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:12px}.savings-row{display:flex;align-items:center}.savings-col{flex:1;text-align:center}.amount{font-family:Unbounded,sans-serif;font-weight:700;font-size:1.12rem;color:var(--ember-soft);font-variant-numeric:tabular-nums;white-space:nowrap}.currency{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:4px;font-weight:700}.savings-divider{width:1px;align-self:stretch;background:#ff6b3540}@media (prefers-reduced-motion: reduce){.days-block:before,.badge-dot,.clock-unit .value.seconds{animation:none}}@media (max-width: 400px){.days{font-size:4.2rem}.clock-unit{min-width:46px}}@media (max-width: 640px){.main-view{position:fixed;top:0;right:0;bottom:0;left:0;padding:max(1.25rem,env(safe-area-inset-top)) 1.5rem max(1.5rem,env(safe-area-inset-bottom));max-width:none}.content{flex:1;justify-content:center}}</style>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
