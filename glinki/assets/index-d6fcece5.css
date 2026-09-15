@@ -1770,7 +1770,7 @@ form#OrderForm .order-form__hint {
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
-  background-image: url(./images/camera-bg.jpg);
+  background-image: url(images/camera-bg.jpg);
   background-size: 100%;
   background-position-y: 50%;
   background-position-y: center;
